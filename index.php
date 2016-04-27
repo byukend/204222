@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Dormitory</title>
+    <title>CMU Dorm</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/page.css">
@@ -18,7 +18,7 @@
     </style>
 </head>
 
-<body >
+<body >    
     <!--start navbar-->
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color: #9e76b2;">Dorm</a>
+                <a class="navbar-brand" href="#" style="color: #9e76b2;">CMU Dorm</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,8 +51,13 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                <?php session_start();if(isset($_SESSION['logged_in'])){ ?>
+                    <li><a href=""  style="color: #9e76b2;"><?php echo "Hi, ".$_SESSION['logged_in']; ?></a></li>
+                    <li><a href="admin/pages/valid.php?logout=1" style="color: #9e76b2;">Log out</a></li>
+                    <?php }else{?>
                     <li><a href="admin/pages/login.php"  style="color: #9e76b2;">Log In</a></li>
                     <li><a href="user/register.php" style="color: #9e76b2;">Register</a></li>
+                    <?php } ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -128,7 +133,7 @@
                 </a>
             </div>
 
-            
+
             <section>
                 <div class="panel panel-info">
                     <div class="panel-heading">
@@ -147,7 +152,7 @@
             </div>
         </section>
 
-        
+
     </div>
 
 </section>

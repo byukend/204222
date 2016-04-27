@@ -24,7 +24,7 @@
             </div>
             <div class="col-sm-5"></div>
             <div class="col-sm-1">
-        <a href="../index.html">
+        <a href="../index.php">
             <button type="button" class="btn btn-default btn-lg">
                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
             </button>
@@ -44,7 +44,7 @@
             <label class="radio-inline"><input type="radio" name="optradio">นาย</label>
             <label class="radio-inline"><input type="radio" name="optradio">นาง</label>
             <label class="radio-inline"><input type="radio" name="optradio">นางสาว</label>
-
+            <from action="createStu.php" method = "POST">
                 <div class="form-group">
                     <label for="InputFirstName">ชื่อ</label>
                     <div class="input-group">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
-      
+        </from>
         </div>
         </div>
     <div class="col-xs-3"></div>

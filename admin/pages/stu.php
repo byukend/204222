@@ -65,7 +65,7 @@
                 <li><a href="#" class="active"><i class="fa fa-user fa-fw"></i> User Profile</a>
                 </li>
                 <li class="divider"></li>
-                <li><a href="login.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                <li><a href="login.php"><?php session_destroy(); ?><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </li>
               </ul>
               <!-- /.dropdown-user -->
